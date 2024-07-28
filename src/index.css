@@ -8,6 +8,15 @@
 
 }
 
+.changeme{
+  font-family: 'Mona-Sans-Bold',sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
 @layer base {
   @font-face {
     font-family: 'Mona-Sans';
@@ -18,6 +27,18 @@
   }
 }
 
+.expanded{
+  font-family: 'Mona-Sans-Ex',sans-serif;
+}
+
+@font-face {
+  font-family: 'Mona-Sans-Ex';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(./fonts/MonaSansExpanded-Medium.woff2) format('woff2');
+}
+
 @font-face {
   font-family: 'Mona-Sans';
   font-style: normal;
@@ -25,6 +46,15 @@
   font-display: swap;
   src: url(./fonts/MonaSans-Regular.woff2) format('woff2');
 }
+
+@font-face {
+  font-family: 'Mona-Sans-Bold';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(./fonts/MonaSans-Bold.woff2) format('woff2');
+}
+
 
 *{
   font-family: 'Mona-Sans',sans-serif;
