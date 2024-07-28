@@ -17,7 +17,7 @@ function Login() {
   };
 
   return (
-    <div className="bg-[#EDF1D6] w-full min-h-screen flex flex-col items-center relative">
+    <div className="bg-[#EDF1D6] w-full min-h-screen flex flex-col items-center relative overflow-hidden">
       <Navbar />
       <img
         src="camp_car.png"

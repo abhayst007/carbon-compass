@@ -26,12 +26,12 @@ function Sidebar({ selection, setLocation }) {
       active: false,
     },
 
-    {
-      name: "Weather and Air Quality",
-      icon: "fluent_weather-haze-24-regular.svg",
-      path: "weather-air-quality",
-      active: false,
-    },
+    // {
+    //   name: "Weather and Air Quality",
+    //   icon: "fluent_weather-haze-24-regular.svg",
+    //   path: "weather-air-quality",
+    //   active: false,
+    // },
     {
       name: "Green Travel Tips",
       icon: "material-symbols_travel-explore.svg",
