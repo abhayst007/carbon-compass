@@ -9,6 +9,7 @@ function Carpooling({ globalLocal }) {
       end_time: "18:30",
       total_time: "3h50",
       driver_name: "Krishna",
+      price: 450,
     },
     {
       start: "Indore",
@@ -17,6 +18,7 @@ function Carpooling({ globalLocal }) {
       end_time: "12:45",
       total_time: "3h30",
       driver_name: "Ravi",
+      price: 480,
     },
     {
       start: "Indore",
@@ -25,6 +27,7 @@ function Carpooling({ globalLocal }) {
       end_time: "10:50",
       total_time: "3h50",
       driver_name: "Priya",
+      price: 440,
     },
     {
       start: "Indore",
@@ -33,6 +36,7 @@ function Carpooling({ globalLocal }) {
       end_time: "20:20",
       total_time: "3h50",
       driver_name: "Suresh",
+      price: 490,
     },
     {
       start: "Indore",
@@ -41,6 +45,7 @@ function Carpooling({ globalLocal }) {
       end_time: "14:45",
       total_time: "3h45",
       driver_name: "Anjali",
+      price: 430,
     },
     {
       start: "Indore",
@@ -49,8 +54,10 @@ function Carpooling({ globalLocal }) {
       end_time: "21:40",
       total_time: "3h40",
       driver_name: "Vijay",
+      price: 460,
     },
   ];
+
   return (
     <div className="flex flex-col gap-4 ">
       {/* Text Content */}
@@ -108,7 +115,7 @@ function Carpooling({ globalLocal }) {
                   </div>
 
                   <div className="flex flex-row">
-                    <p className="text-xl font-bold">₹6969</p>
+                    <p className="text-xl font-bold">₹{data.price}</p>
                   </div>
                 </div>
 
@@ -129,7 +136,12 @@ function Carpooling({ globalLocal }) {
 
                   <div>
                     <div className="bg-black text-white text-sm rounded-md w-fit px-3 py-2 cursor-pointer hover:bg-black/70 transition-all ease-in select-none">
-                      <p className="text-[10px] font-bold">Book Now</p>
+                      <a
+                        href="https://www.blablacar.in/ride-sharing/indore/bhopal"
+                        className="text-[10px] font-bold"
+                      >
+                        Book Now
+                      </a>
                     </div>
                   </div>
                 </div>

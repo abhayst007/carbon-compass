@@ -102,7 +102,7 @@ function Route({ globalLocal, setGlobalLocal }) {
         location.start[0] !== 0
           ? [location.start[1], location.start[0]]
           : [77.216721, 28.6448],
-      zoom: 15,
+      zoom: 8,
       maxTileCacheSize: 30,
       maxTileCacheZoomLevels: 10,
       minZoom: 5,
