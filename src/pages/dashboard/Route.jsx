@@ -92,7 +92,7 @@ function Route({ globalLocal, setGlobalLocal }) {
     const minutes = parseInt(timeArray[2]);
     return [hours, minutes];
   }
-  const notify = () => toast("Wow so easy !");
+  // const notify = () => toast("Wow so easy !");
   useEffect(() => {
     if (!mapReady) return;
 
@@ -126,7 +126,7 @@ function Route({ globalLocal, setGlobalLocal }) {
         .post(
           // "https://api.olamaps.io/routing/v1/directions?origin=22.711833%2C%2075.877299&destination=22.726673%2C%2075.821215&alternatives=false&steps=true&overview=full&language=en&traffic_metadata=true&api_key=rc6M42Nm9j98C08qT53xlBUhKMAMMGrMpoqsytwU"
           // `https://api.olamaps.io/routing/v1/directions?origin=22.711833%2C%2075.877299&destination=22.726673%2C%2075.821215&alternatives=false&steps=true&overview=full&language=en&traffic_metadata=true&api_key=rc6M42Nm9j98C08qT53xlBUhKMAMMGrMpoqsytwU`
-          `https://api.olamaps.io/routing/v1/directions?origin=${location.start[0]},${location.start[1]}&destination=${location.end[0]},${location.start[1]}&alternatives=false&steps=true&overview=full&language=en&traffic_metadata=true&api_key=${api_key}`
+          `https://api.olamaps.io/routing/v1/directions?origin=${location.start[0]},${location.start[1]}&destination=${location.end[0]},${location.end[1]}&alternatives=false&steps=true&overview=full&language=en&traffic_metadata=true&api_key=${api_key}`
         )
         .then((response) => {
           setGlobalLocal({
