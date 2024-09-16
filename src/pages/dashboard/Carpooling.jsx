@@ -137,7 +137,7 @@ function Carpooling({ globalLocal }) {
                   <div>
                     <div className="bg-black text-white text-sm rounded-md w-fit px-3 py-2 cursor-pointer hover:bg-black/70 transition-all ease-in select-none">
                       <a
-                        href=""
+                        href="https://www.blablacar.in/ride-sharing/indore/bhopal"
                         className="text-[10px] font-bold"
                       >
                         Book Now
